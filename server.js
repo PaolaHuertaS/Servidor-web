@@ -1,10 +1,10 @@
 console.clear();
-const http = require('http');
+import {createServer} from 'http';
 
-const httpServer = http.createServer((req,res) => {
+const httpServer = createServer((req,res) => {
     console.log("Pagina de servidor web");
-
     res.end("Recibido");
 });
 
 httpServer.listen(3000);
+
